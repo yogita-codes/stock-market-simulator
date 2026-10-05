@@ -6,10 +6,6 @@ using namespace std;
 
 int main() {
 
-    // =========================
-    // Create Market
-    // =========================
-
     Market market;
 
     market.addStock(
@@ -29,16 +25,8 @@ int main() {
     );
 
 
-    // =========================
-    // Create User
-    // =========================
-
     User user(100000);
 
-
-    // =========================
-    // Main Menu
-    // =========================
 
     int choice;
 
@@ -61,19 +49,12 @@ int main() {
         cin >> choice;
 
 
-        // =========================
-        // Show Market
-        // =========================
-
         if (choice == 1) {
 
             market.displayMarket();
         }
 
 
-        // =========================
-        // Buy Stock
-        // =========================
 
         else if (choice == 2) {
 
@@ -94,10 +75,6 @@ int main() {
         }
 
 
-        // =========================
-        // Sell Stock
-        // =========================
-
         else if (choice == 3) {
 
             string symbol;
@@ -117,19 +94,11 @@ int main() {
         }
 
 
-        // =========================
-        // Show Portfolio
-        // =========================
-
         else if (choice == 4) {
 
             user.showPortfolio();
         }
 
-
-        // =========================
-        // Update Stock Price
-        // =========================
 
         else if (choice == 5) {
 
@@ -157,19 +126,11 @@ int main() {
         }
 
 
-        // =========================
-        // Show Balance
-        // =========================
-
         else if (choice == 6) {
 
             user.showBalance();
         }
 
-
-        // =========================
-        // Exit
-        // =========================
 
         else if (choice == 7) {
 
